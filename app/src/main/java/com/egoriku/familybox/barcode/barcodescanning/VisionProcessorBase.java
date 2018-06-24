@@ -2,7 +2,7 @@ package com.egoriku.familybox.barcode.barcodescanning;
 
 import android.graphics.Bitmap;
 import android.media.Image;
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 
 import com.egoriku.familybox.camera.FrameMetadata;
 import com.egoriku.familybox.camera.GraphicOverlay;

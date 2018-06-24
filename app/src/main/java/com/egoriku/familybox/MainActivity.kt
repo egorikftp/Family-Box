@@ -3,9 +3,10 @@ package com.egoriku.familybox
 import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import com.egoriku.familybox.barcode.BarcodeScanningActivity
 import com.egoriku.familybox.barcode.encoder.BarcodeEncoder
+import com.egoriku.familybox.fragment.RoundedBottomSheetDialogFragment
 import com.google.zxing.BarcodeFormat
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -22,11 +23,16 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        button.setOnClickListener {
+        fab.setOnClickListener {
             startActivityForResult(
                     Intent(this, BarcodeScanningActivity::class.java),
-                    REQUEST_CODE
-            )
+                    REQUEST_CODE)
+        }
+
+        bottomAppBar.setNavigationOnClickListener {
+            RoundedBottomSheetDialogFragment().apply {
+                show(supportFragmentManager, this.tag)
+            }
         }
     }
 

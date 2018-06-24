@@ -1,6 +1,7 @@
 package com.egoriku.familybox.barcode.barcodescanning;
 
-import android.support.annotation.NonNull;
+import android.graphics.Rect;
+import androidx.annotation.NonNull;
 import android.util.Log;
 
 import com.egoriku.familybox.barcode.BarcodeListener;
@@ -15,9 +16,7 @@ import com.google.firebase.ml.vision.common.FirebaseVisionImage;
 import java.io.IOException;
 import java.util.List;
 
-/**
- * Barcode Detector Demo.
- */
+
 public class BarcodeScanningProcessor extends VisionProcessorBase<List<FirebaseVisionBarcode>> {
 
     private static final String TAG = "BarcodeScanProc";
@@ -49,13 +48,10 @@ public class BarcodeScanningProcessor extends VisionProcessorBase<List<FirebaseV
     }
 
     @Override
-    protected void onSuccess(
-            @NonNull List<FirebaseVisionBarcode> barcodes,
-            @NonNull FrameMetadata frameMetadata) {
-
+    protected void onSuccess(@NonNull List<FirebaseVisionBarcode> barcodes, @NonNull FrameMetadata frameMetadata) {
         if (barcodes.size() > 0) {
-            FirebaseVisionBarcode firebaseVisionBarcode = barcodes.get(0);
-            barcodeListener.onSuccess(firebaseVisionBarcode.getRawValue(), firebaseVisionBarcode.getFormat());
+            FirebaseVisionBarcode barcode = barcodes.get(0);
+            barcodeListener.onSuccess(barcode.getRawValue(), barcode.getFormat());
         }
     }
 
