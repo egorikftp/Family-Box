@@ -4,8 +4,7 @@ import android.support.annotation.NonNull;
 import android.util.Log;
 
 import com.egoriku.familybox.barcode.BarcodeListener;
-import com.egoriku.familybox.barcode.FrameMetadata;
-import com.egoriku.familybox.barcode.VisionProcessorBase;
+import com.egoriku.familybox.camera.FrameMetadata;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.ml.vision.FirebaseVision;
 import com.google.firebase.ml.vision.barcode.FirebaseVisionBarcode;

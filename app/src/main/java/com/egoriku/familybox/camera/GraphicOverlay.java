@@ -1,4 +1,4 @@
-package com.egoriku.familybox.barcode;
+package com.egoriku.familybox.camera;
 
 import android.content.Context;
 import android.graphics.Canvas;

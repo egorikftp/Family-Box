@@ -1,4 +1,4 @@
-package com.egoriku.familybox.barcode;
+package com.egoriku.familybox.camera;
 
 import android.annotation.SuppressLint;
 import android.content.Context;

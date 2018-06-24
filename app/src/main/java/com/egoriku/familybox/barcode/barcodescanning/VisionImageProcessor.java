@@ -1,8 +1,9 @@
-package com.egoriku.familybox.barcode;
+package com.egoriku.familybox.barcode.barcodescanning;
 
 import android.graphics.Bitmap;
 import android.media.Image;
 
+import com.egoriku.familybox.camera.FrameMetadata;
 import com.google.firebase.ml.common.FirebaseMLException;
 
 import java.nio.ByteBuffer;

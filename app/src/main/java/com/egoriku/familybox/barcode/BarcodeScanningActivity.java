@@ -15,6 +15,8 @@ import android.widget.CompoundButton;
 
 import com.egoriku.familybox.R;
 import com.egoriku.familybox.barcode.barcodescanning.BarcodeScanningProcessor;
+import com.egoriku.familybox.camera.CameraSource;
+import com.egoriku.familybox.camera.CameraSourcePreview;
 
 import java.io.IOException;
 import java.util.ArrayList;

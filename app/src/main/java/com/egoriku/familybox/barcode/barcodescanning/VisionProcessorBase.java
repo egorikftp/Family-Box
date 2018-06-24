@@ -1,9 +1,11 @@
-package com.egoriku.familybox.barcode;
+package com.egoriku.familybox.barcode.barcodescanning;
 
 import android.graphics.Bitmap;
 import android.media.Image;
 import android.support.annotation.NonNull;
 
+import com.egoriku.familybox.camera.FrameMetadata;
+import com.egoriku.familybox.camera.GraphicOverlay;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;

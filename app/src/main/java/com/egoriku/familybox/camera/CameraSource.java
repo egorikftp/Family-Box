@@ -1,4 +1,4 @@
-package com.egoriku.familybox.barcode;
+package com.egoriku.familybox.camera;
 
 import android.Manifest;
 import android.annotation.SuppressLint;
@@ -15,6 +15,7 @@ import android.view.Surface;
 import android.view.SurfaceHolder;
 import android.view.WindowManager;
 
+import com.egoriku.familybox.barcode.barcodescanning.VisionImageProcessor;
 import com.google.android.gms.common.images.Size;
 
 import java.io.IOException;
@@ -566,7 +567,7 @@ public class CameraSource {
         }
     }
 
-    void setMachineLearningFrameProcessor(VisionImageProcessor processor) {
+    public void setMachineLearningFrameProcessor(VisionImageProcessor processor) {
         synchronized (processorLock) {
             if (frameProcessor != null) {
                 frameProcessor.stop();

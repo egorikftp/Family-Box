@@ -26,5 +26,7 @@ dependencies {
     implementation 'com.android.support.constraint:constraint-layout:1.1.2'
 
     implementation 'com.google.firebase:firebase-ml-vision:16.0.0'
+
+    implementation 'com.google.zxing:core:3.2.0'
 }
 apply plugin: 'com.google.gms.google-services'

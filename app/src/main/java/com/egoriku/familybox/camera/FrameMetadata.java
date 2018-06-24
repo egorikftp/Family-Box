@@ -1,4 +1,4 @@
-package com.egoriku.familybox.barcode;
+package com.egoriku.familybox.camera;
 
 /** Describing a frame info. */
 public class FrameMetadata {
