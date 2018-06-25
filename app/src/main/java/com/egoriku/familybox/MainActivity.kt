@@ -42,9 +42,9 @@ class MainActivity : AppCompatActivity() {
         if (requestCode == REQUEST_CODE && resultCode == Activity.RESULT_OK && data != null) {
 
             val stringExtra = data.getStringExtra(BARCODE_VALUE)
-            val encodeBitmap = encoder.encodeBitmap(stringExtra, BarcodeFormat.CODE_128, imageView.width, imageView.height)
+          /*  val encodeBitmap = encoder.encodeBitmap(stringExtra, BarcodeFormat.CODE_128, imageView.width, imageView.height)
             imageView.setImageBitmap(encodeBitmap)
-            textView.text = stringExtra
+            textView.text = stringExtra*/
         }
     }
 }

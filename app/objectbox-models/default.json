@@ -1,0 +1,38 @@
+{
+  "_note1": "KEEP THIS FILE! Check it into a version control system (VCS) like git.",
+  "_note2": "ObjectBox manages crucial IDs for your object model. See docs for details.",
+  "_note3": "If you have VCS merge conflicts, you must resolve them according to ObjectBox docs.",
+  "entities": [
+    {
+      "id": "1:3104377204233917066",
+      "lastPropertyId": "3:3797665080215655171",
+      "name": "Card",
+      "properties": [
+        {
+          "id": "1:7948121833326878308",
+          "name": "id"
+        },
+        {
+          "id": "2:4982331295646962988",
+          "name": "barcodeValue"
+        },
+        {
+          "id": "3:3797665080215655171",
+          "name": "barcodeFormat"
+        }
+      ],
+      "relations": []
+    }
+  ],
+  "lastEntityId": "1:3104377204233917066",
+  "lastIndexId": "0:0",
+  "lastRelationId": "0:0",
+  "lastSequenceId": "0:0",
+  "modelVersion": 4,
+  "modelVersionParserMinimum": 4,
+  "retiredEntityUids": [],
+  "retiredIndexUids": [],
+  "retiredPropertyUids": [],
+  "retiredRelationUids": [],
+  "version": 1
+}
